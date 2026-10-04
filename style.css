@@ -1,0 +1,1470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brown: #5a210b;
+    --dark-brown: #351307;
+    --orange: #f98f04;
+    --gold: #ffb52b;
+    --cream: #fffaf1;
+    --border: #e8c98d;
+    --text: #351307;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+p,
+.buy-five-content p
+ {
+    font-family: 'SolaimanLipi', sans-serif;
+}
+
+.page {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    overflow: hidden;
+}
+
+
+/* =========================
+   COVER
+========================= */
+
+.cover {
+    width: 100%;
+    background: #351307;
+}
+
+.cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    /*
+       Cover image automatically keeps
+       its original ratio.
+    */
+}
+
+
+/* =========================
+   DISCOUNT
+========================= */
+
+.discount-card {
+    margin: 12px;
+    padding: 10px;
+
+    background: linear-gradient(
+        145deg,
+        #2d0c02,
+        #5b2007
+    );
+
+    border: 2px solid #e9a329;
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 12px rgba(249, 143, 4, 0.45);
+
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+}
+
+
+.discount-image {
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+.discount-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+
+.discount-content {
+    width: 58%;
+    padding: 10px 4px;
+}
+
+
+.discount-content h2 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+
+.promo-code-box {
+    border: 1px dashed #f5bd45;
+    border-radius: 10px;
+
+    padding: 12px 8px;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+
+    white-space: nowrap;
+}
+
+
+.promo-code-box span {
+    font-size: 13px;
+}
+
+
+.promo-code-box strong {
+    color: var(--orange);
+    font-size: 21px;
+}
+
+
+.copy-btn {
+    width: 100%;
+    border: 0;
+    border-radius: 30px;
+
+    margin-top: 12px;
+    padding: 12px;
+
+    background: linear-gradient(
+        90deg,
+        #ff8c00,
+        #ffad21
+    );
+
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.copy-btn:active {
+    transform: scale(.97);
+}
+
+
+.discount-content p {
+    color: white;
+    font-size: 11px;
+    margin-top: 7px;
+}
+
+
+.copy-message {
+    display: none;
+
+    color: #ffd16a;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+
+/* =========================
+   REDEEM
+========================= */
+
+.redeem-card {
+    margin: 14px 12px;
+    padding: 10px 10px;
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    background: #fffdf9;
+}
+
+
+.redeem-card h2 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 9px;        
+    margin-bottom: 18px;
+    color: #F98F05;
+}
+
+
+.section-icon {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F98F05;
+    color: white;
+
+    border-radius: 50%;
+}
+
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+
+.step-number {
+    width: 22px;
+    height: 22px;
+
+    background: var(--orange);
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto -4px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.step-icon {
+    width: 50px;
+    height: 50px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: #fff4df;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    color: var(--brown);
+    border: 1px solid #ead9b7;
+}
+
+
+.step p {
+    font-size: 10px;
+    margin-top: 7px;
+    line-height: 1.3;
+}
+
+
+.arrow {
+    color: #b96823;
+    font-size: 13px;
+}
+
+
+/* =========================
+   SOCIAL
+========================= */
+
+.social-section {
+    padding: 0 12px;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0 14px;
+}
+
+.section-title span {
+    height: 1px;
+    background: #c98236;
+    flex: 1;
+}
+
+.section-title h2 {
+    font-size: 16px;
+    white-space: nowrap;
+    color: #FF8600;
+}
+
+
+/* =========================
+   SOCIAL GRID
+========================= */
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+/* =========================
+   SOCIAL CARD
+========================= */
+
+.social-card {
+    padding: 8px 6px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    min-height: 70px;
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        background 0.18s ease;
+}
+
+
+/* =========================
+   FACEBOOK CARD
+========================= */
+
+.social-card:nth-child(1) {
+    background: #F5F9FF;
+    border: 1px solid #D7E5FA;
+    color: #1877F2;
+
+/* 
+    box-shadow:
+        -3px -3px 6px rgba(255,255,255,0.95),
+         3px  3px 6px rgba(60,100,150,0.10);
+*/
+}
+
+
+/* =========================
+   WHATSAPP CARD
+========================= */
+
+.social-card:nth-child(2) {
+    background: #F4FCF7;
+    border: 1px solid #D4EFDE;
+    color: #20B85A;
+
+/*
+    box-shadow:
+        -3px -3px 6px rgba(255,255,255,0.95),
+         3px  3px 6px rgba(45,120,75,0.10);
+*/
+}
+
+
+/* =========================
+   CALL CARD
+========================= */
+
+.social-card:nth-child(3) {
+    background: #F5F9FF;
+    border: 1px solid #D5E4FA;
+    color: black;
+
+/*
+    box-shadow:
+        -3px -3px 6px rgba(255,255,255,0.95),
+         3px  3px 6px rgba(45,95,160,0.10);
+9*/
+}
+
+
+/* =========================
+   SOCIAL ICON
+========================= */
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+
+    margin: 0 0 8px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    border-radius: 10px;
+
+    font-size: 21px;
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+
+/* =========================
+   FACEBOOK ICON
+========================= */
+
+.social-card:nth-child(1) .social-icon {
+    background: #EAF2FF;
+    border: 1px solid #C9DDFF;
+
+    color: #1877F2;
+
+    box-shadow:
+        inset 0 0 4px rgba(255,255,255,1),
+        inset 0 0 5px rgba(24,119,242,0.12),
+        -3px -3px 5px rgba(255,255,255,0.95),
+         3px  3px 5px rgba(24,119,242,0.13);
+}
+
+.social-card:nth-child(1) .social-icon i {
+    color: #1877F2;
+}
+
+
+/* =========================
+   WHATSAPP ICON
+========================= */
+
+.social-card:nth-child(2) .social-icon {
+    background: #E9F9EF;
+    border: 1px solid #C8EFD7;
+
+    color: #20B85A;
+
+    box-shadow:
+        inset 0 0 4px rgba(255,255,255,1),
+        inset 0 0 5px rgba(32,184,90,0.12),
+        -3px -3px 5px rgba(255,255,255,0.95),
+         3px  3px 5px rgba(32,184,90,0.13);
+}
+
+.social-card:nth-child(2) .social-icon i {
+    color: #20B85A;
+}
+
+
+/* =========================
+   CALL ICON
+========================= */
+
+.social-card:nth-child(3) .social-icon {
+    background: #EAF2FF;
+    border: 1px solid #C9DDFF;
+
+    color: #1A73E8;
+
+    box-shadow:
+        inset 0 0 4px rgba(255,255,255,1),
+        inset 0 0 5px rgba(26,115,232,0.12),
+        -3px -3px 5px rgba(255,255,255,0.95),
+         3px  3px 5px rgba(26,115,232,0.13);
+}
+
+.social-card:nth-child(3) .social-icon i {
+    color: #1A73E8;
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.social-icon i {
+    font-size: 21px;
+    line-height: 1;
+
+    text-shadow:
+        1px 1px 1px rgba(255,255,255,0.9);
+}
+
+
+/* =========================
+   SOCIAL TEXT
+========================= */
+
+.social-card span {
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* =========================
+   TAP EFFECT
+========================= */
+
+.social-card:active {
+    transform: scale(0.97);
+}
+
+.social-card:active .social-icon {
+    transform: scale(0.94);
+
+    box-shadow:
+        inset 3px 3px 6px rgba(60,60,60,0.12),
+        inset -3px -3px 6px rgba(255,255,255,0.95);
+}
+
+
+/* =========================
+   HIDE EXTRA SOCIAL ITEMS
+   যদি HTML-এ Instagram,
+   X, Email থেকে যায়
+========================= */
+
+.social-card:nth-child(n+4) {
+    display: none;
+}
+
+
+/* =========================
+   BUY 5
+========================= */
+
+.buy-five {
+    margin: 18px 12px;
+    padding: 16px 12px;
+
+    border: 1px solid #e6b763;
+    border-radius: 15px;
+
+    background: linear-gradient(
+        110deg,
+        #fff9ed,
+        #fffdf9
+    );
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+
+.gift-icon {
+    font-size: 32px;
+    color: var(--orange);
+    transform: translateY(-20px);    
+}
+
+
+.buy-five-content {
+    flex: 1;
+    min-width: 190px;
+}
+
+
+.buy-five-content h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #F98F05;
+}
+
+
+.buy-five-content p {
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+
+/* =========================
+   5 PRODUCT CART SECTION
+   ========================= */
+
+.product-count {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+
+/* Cart + number একই width-এর column */
+.cart-row,
+.numbers {
+    width: 230px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Cart */
+.cart {
+    width: 38px;
+    height: 38px;
+
+    margin: 0 auto;
+
+    border-radius: 50%;
+
+    background: #fff4dc;
+
+    border: 1px solid #ead9b7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #866d4b;
+
+    font-size: 13px;
+}
+
+
+/* 5th Cart */
+.cart.active {
+    background: var(--orange);
+    color: white;
+    border-color: var(--orange);
+}
+
+
+/* Numbers */
+.numbers {
+    margin-top: 5px;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    color: #3d2418;
+}
+
+
+/* 5th Number-এর গোল orange background */
+.numbers span {
+    width: 22px;
+    height: 22px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+
+/* শুধু ৫ */
+.numbers span:last-child {
+    background: var(--orange);
+    color: white;
+}
+
+.buy-five-content p strong {
+    color: #974A01;
+}
+
+
+/* =========================
+   HELP
+========================= */
+
+.help-card {
+    margin: 14px 12px;
+
+    padding: 15px 10px;
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    flex-wrap: wrap;
+}
+
+
+.help-icon {
+    width: 42px;
+    height: 42px;
+
+    background: var(--brown);
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.help-text {
+    flex: 1;
+}
+
+
+.help-text h2 {
+    font-size: 16px;
+}
+
+
+.help-text p {
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+
+.help-buttons {
+    display: flex;
+    gap: 7px;
+    width: 100%;
+}
+
+
+.help-buttons a {
+    flex: 1;
+
+    border: 1px solid #c98236;
+    border-radius: 25px;
+
+    padding: 8px 5px;
+
+    text-decoration: none;
+
+    color: #87370f;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #351307;
+    color: white;
+
+    text-align: center;
+
+    padding: 18px 10px;
+}
+
+
+.footer-line {
+    display: inline-block;
+
+    width: 35px;
+    height: 1px;
+
+    background: #f3a629;
+
+    vertical-align: middle;
+
+    margin: 0 8px;
+}
+
+
+footer span {
+    font-size: 10px;
+}
+
+
+footer p {
+    font-size: 9px;
+    margin-top: 7px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .discount-card {
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .discount-content h2 {
+        font-size: 15px;
+    }
+
+    .promo-code-box {
+        padding: 10px 5px;
+    }
+
+    .promo-code-box strong {
+        font-size: 18px;
+    }
+
+    .copy-btn {
+        padding: 10px 5px;
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 700px) {
+
+    body {
+        padding: 30px 0;
+    }
+
+    .page {
+        box-shadow: 0 5px 35px rgba(0,0,0,.12);
+        border-radius: 15px;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .help-buttons {
+        width: auto;
+    }
+
+}
+
+/* Remove blue tap/click highlight */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a,
+.social-card,
+input,
+textarea,
+select {
+    outline: none;
+}
+
+button:focus,
+button:active,
+a:focus,
+a:active,
+.social-card:focus,
+.social-card:active {
+    outline: none;
+    box-shadow: none;
+}
+
+/* =========================
+   HOT DEALS
+========================= */
+
+.hot-deals {
+    margin: 14px 12px;
+}
+
+.hot-deals-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.hot-deals-title span {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+}
+
+.hot-deals-title h2 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--brown);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.hot-deals-title h2 i {
+    color: #f05a28;
+}
+
+
+/* Product Slider */
+
+.hot-deals-slider {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 2px 1px 8px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.hot-deals-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Product Card */
+
+.deal-card {
+    flex: 0 0 calc(50% - 5px);
+    min-width: 0;
+    padding: 7px;
+    background: #fffdf9;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+}
+
+
+/* Product Image */
+
+.deal-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 9px;
+    background: #f7f3ed;
+}
+
+.deal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Discount Badge */
+
+.discount-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+
+    padding: 5px 7px;
+
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+
+    background: rgba(40, 35, 20, 0.42);
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+
+/* =========================
+   HOT DEALS PRODUCT TITLE
+========================= */
+
+.deal-card h3 {
+    margin: 4px 2px 2px;
+
+    font-size: 12px;
+    line-height: 1.3;
+
+    color: #2f2018;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transform: translateY(4px);
+}
+
+
+/* =========================
+   PRICE + FREE DELIVERY
+========================= */
+
+.deal-price-row {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* গুরুত্বপূর্ণ:
+       দুই কার্ডের price একই height/line-এ থাকবে */
+    align-items: start;
+
+    gap: 5px;
+
+    margin: 0 0 4px;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   PRODUCT PRICE
+========================= */
+
+.deal-price {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 5px;
+
+    margin: 0;
+    padding: 0;
+
+    align-self: start;
+    box-sizing: border-box;
+    transform: translateY(8px);
+}
+
+.old-price {
+    font-size: 10px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.deal-price strong {
+    font-size: 14px;
+    color: var(--orange);
+}
+
+/* =========================
+   FREE DELIVERY BADGE
+========================= */
+
+.free-delivery-badge {
+    width: 100%;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 4px 8px;
+
+    margin: 0;
+
+    color: #A65316;
+    background: #FFF4E5;
+
+    border: 1px solid #F2C58B;
+    border-radius: 5px;
+
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 1;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.free-delivery-badge i {
+    font-size: 11px;
+    color: #D97818;
+}
+
+.free-delivery-badge:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================
+   HOT DEALS CARD
+========================= */
+
+.hot-deals-slider {
+    align-items: stretch;
+}
+
+.deal-card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   BUY BUTTONS
+========================= */
+
+.deal-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+
+    margin-top: auto;
+}
+
+.deal-btn {
+    min-height: 31px;
+
+    border-radius: 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    text-decoration: none;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    transition:
+        transform 0.15s ease,
+        opacity 0.15s ease;
+}
+
+.deal-btn:active {
+    transform: scale(0.94);
+    opacity: 0.85;
+}
+
+.deal-btn i {
+    font-size: 13px;
+}
+
+
+/* =========================
+   MESSENGER
+========================= */
+
+.deal-btn.messenger {
+    background: #e8f1ff;
+    color: #1877f2;
+    border: 1px solid #c9ddff;
+}
+
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.deal-btn.whatsapp {
+    background: #e9f9ef;
+    color: #20b85a;
+    border: 1px solid #c8efd7;
+}
+
+
+/* =========================
+   PRODUCT IMAGE VIEWER
+========================= */
+
+.zoomable-product {
+    cursor: zoom-in;
+}
+
+
+/* Full Screen Viewer */
+
+.product-image-viewer {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+
+    z-index: 9999;
+}
+
+
+/* Viewer Open */
+
+.product-image-viewer.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Large Image */
+
+.product-image-viewer img {
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 90vh;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    transform: scale(0.92);
+
+    transition: transform 0.25s ease;
+}
+
+
+/* Image Zoom Animation */
+
+.product-image-viewer.show img {
+    transform: scale(1);
+}
+
+
+/* Close Button */
+
+.image-close {
+    position: absolute;
+
+    top: 14px;
+    right: 14px;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.15);
+
+    color: white;
+
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    z-index: 10000;
+}
+
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    .product-image-viewer {
+        padding: 12px;
+    }
+
+    .product-image-viewer img {
+        max-width: 100%;
+        max-height: 88vh;
+        border-radius: 8px;
+    }
+
+    .image-close {
+        top: 10px;
+        right: 10px;
+
+        width: 36px;
+        height: 36px;
+
+        font-size: 18px;
+    }
+}
+
+
+/* Image Navigation Buttons */
+
+.image-nav {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.15);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    z-index: 10000;
+}
+
+.image-nav.prev {
+    left: 10px;
+}
+
+.image-nav.next {
+    right: 10px;
+}
+
+.image-nav:active {
+    transform: translateY(-50%) scale(0.92);
+}
+
+
+/* =========================
+   LIVE SWIPE IMAGE SLIDER
+========================= */
+
+.image-slider-track {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.image-slider-track img {
+    position: absolute;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 90vh;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    user-select: none;
+    -webkit-user-drag: none;
+
+    will-change: transform;
+}
+
+#largeProductImage {
+    transform: translate3d(0, 0, 0);
+
+    touch-action: pan-y;
+
+    z-index: 2;
+}
+
+#nextProductImage {
+    transform: translate3d(100%, 0, 0);
+
+    z-index: 1;
+}
+
+@media (max-width: 480px) {
+
+    .image-slider-track {
+        height: 88vh;
+    }
+
+    .image-slider-track img {
+        max-width: 100%;
+        max-height: 88vh;
+        border-radius: 8px;
+    }
+}
+
+/* =========================
+   MOBILE FREE DELIVERY ALIGN
+========================= */
+
+@media (max-width: 600px) {
+
+    .deal-price-row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        box-sizing: border-box;
+        margin: 2px;
+    }
+
+    .free-delivery-badge {
+        width: calc(100% - 14px);
+        margin: 4.2px;
+        box-sizing: border-box;
+    }
+
+}
